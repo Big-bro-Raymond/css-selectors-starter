@@ -781,7 +781,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-table#table-styles tbody tr td:first-child { 
+#more-styling div:nth-child(2) { 
     font-weight: bold;
 }
 
@@ -791,7 +791,7 @@ table#table-styles tbody tr td:first-child {
     select the table heading cells (th) and the table data cells in the table styles section using the element/tag name and multiple element selectors
 */
 /* ----- */
-table#table-styles th, table#table-styles td { 
+#more-styling div:nth-child(3) { 
     border: 1px solid var(--dk-gray);
     padding: 4px;
 }
@@ -802,7 +802,7 @@ table#table-styles th, table#table-styles td {
     select the table footer in the table styles section using the element/tag name selector
 */
 /* ----- */
-table#table-styles tfoot { 
+#more-styling div:nth-child(4) { 
     font-weight: bold;
 }
 
@@ -852,7 +852,7 @@ table#table-styles tfoot {
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#border-styling .third-div {
+#section-styling .some-class div:nth-child(3) {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -864,7 +864,7 @@ table#table-styles tfoot {
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#border-styling .fourth-div {
+#pseudo-class-styling .section div:nth-child(4) {
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
