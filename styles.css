@@ -737,7 +737,7 @@ ul#list-styling li::before {
     select the table in the table styles section using the element/tag name selector
 */
 /* ----- */
-.table-styles table { 
+.table-styles-section table { 
     border-collapse: collapse;
     width: 100%;
 }
@@ -748,7 +748,7 @@ ul#list-styling li::before {
     select the caption in the table styles section using the element/tag name selector
 */
 /* ----- */
-.table-styles caption { 
+.table-styles-section caption { 
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: 8px;
@@ -760,7 +760,7 @@ ul#list-styling li::before {
     select the table header cells in the table styles section using the element/tag name, descendant, and ID selectors
 */
 /* ----- */
-table#table-styles th { 
+.table-styles-section th { 
     background-color: var(--blue);
     color: var(--white);
 }
@@ -771,7 +771,7 @@ table#table-styles th {
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-table#table-styles tbody tr:nth-child(odd) { 
+.table-styles tbody tr:nth-child(odd) { 
     background-color: var(--dv-orange);
 }
 
@@ -781,7 +781,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#more-styling div:nth-child(2) { 
+.more-styling-section, div:nth-child(2) { 
     font-weight: bold;
 }
 
@@ -791,7 +791,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the table heading cells (th) and the table data cells in the table styles section using the element/tag name and multiple element selectors
 */
 /* ----- */
-#more-styling div:nth-child(3) { 
+#table-styles-section th, #table-styles-section td, div:nth-child(3) { 
     border: 1px solid var(--dk-gray);
     padding: 4px;
 }
@@ -802,7 +802,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the table footer in the table styles section using the element/tag name selector
 */
 /* ----- */
-#more-styling div:nth-child(4) { 
+#table-styles-section tfoot div:nth-child(4) { 
     font-weight: bold;
 }
 
@@ -852,7 +852,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#section-styling .some-class div:nth-child(3) {
+#border-styling div.some-class-div:nth-child(3) {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -864,7 +864,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#pseudo-class-styling .section div:nth-child(4) {
+#pseudo-class-styling div.section-div:nth-child(4) {
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
@@ -876,7 +876,7 @@ table#table-styles tbody tr:nth-child(odd) {
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#border-styling .last-div {
+#MoreStylingSection div.styling:last-of-type {
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
